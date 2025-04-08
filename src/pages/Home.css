@@ -40,6 +40,16 @@ body {
     cursor: pointer;
    }
 
+   .menu {
+    display: none;
+    background-color: #fff;
+    padding: 5px;
+    height: 35px;
+    border-radius: 3px;
+    margin-top: 4rem;
+    cursor: pointer;
+   }
+
    .About {
     display: flex;
     flex-direction: column;
@@ -91,6 +101,41 @@ body {
             height: 110vh;
         }
 
+        .navbar {
+            position: relative;
+        }
+
+        .nav {
+            position: absolute;
+            top: 110px;
+            right: 100px;
+            z-index: -10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 70%;
+            height: 20vh;
+            background-color: #712e25;
+            text-align: center;
+            border-radius: 3px;
+            opacity: 0;
+        }
+
+        
+
+        .nav.active {
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .menu {
+            display: block;
+        }
+
+
+
+
         .About {
             width: 65vw;
         }
@@ -105,6 +150,11 @@ body {
         height: 110vh;
     }
 
+    .nav {
+
+    right: 60px;
+    }
+
     .About {
         width: 45vw;
     }
@@ -117,5 +167,9 @@ body {
 @media screen and (max-width: 391px) {
     body {
         height: 140vh;
+    }
+
+    .nav {
+        right: 45px;
     }
 }

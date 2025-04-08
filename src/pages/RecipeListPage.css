@@ -161,9 +161,10 @@
   .no-recipes {
     bottom: 18rem;
     right: 15px;
-    width: 50%;
-    
+    width: 50%; 
   }
+
+  
 }
 
 
@@ -174,11 +175,12 @@
     position: static;
     margin: 13em 0 0 9rem;
   }
+
 }
 
 @media screen and (max-width: 415px) {
   .no-recipes {
-      margin: 13em 0 0 7em;
+      margin: 13em 0 0 5em;
   }
 }
 
