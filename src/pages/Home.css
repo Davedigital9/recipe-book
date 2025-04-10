@@ -109,7 +109,6 @@ body {
             position: absolute;
             top: 110px;
             right: 100px;
-            z-index: -10;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -137,7 +136,9 @@ body {
 
 
         .About {
+            position: absolute;
             width: 65vw;
+            z-index: -1;
         }
 
         .intro {
