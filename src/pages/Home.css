@@ -111,15 +111,10 @@ body {
         height: 100vh;
     }
 
-    .menu {
-        display: block;
-    }
-
     .About {
-        margin-top: 30px;
+        margin-top: -3.5rem;
         position: absolute;
         width: 55vw;
-        z-index: -1;
     }
 
     .intro {
@@ -149,7 +144,6 @@ body {
             width: 70%;
             height: 20vh;
             background-color: #712e25;
-            text-align: center;
             border-radius: 3px;
             opacity: 0;
         }
@@ -166,12 +160,11 @@ body {
         .About {
             position: absolute;
             width: 65vw;
-            z-index: -1;
         }
 
         .intro {
             width: 90%;
-        }   
+        }
    }
 
     @media screen and (max-width: 431px) {
