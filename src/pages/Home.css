@@ -104,7 +104,7 @@ body {
     color: #f7e9ce;
     font-weight: bold;
     transition: color 0.3s ease;
-    margin-right: 80px;
+/*     margin-right: 80px; */
   }
 
   @media screen and (max-width: 1024px) {
@@ -140,10 +140,11 @@ body {
             position: absolute;
             top: 110px;
             right: 100px;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 1rem;
+            gap: 1em;
             width: 70%;
             height: 20vh;
             background-color: #712e25;
@@ -154,7 +155,6 @@ body {
         .nav.active {
             opacity: 1;
             transition: all 0.5s ease-in-out;
-            align-content: center;
         }
 
         .menu {
@@ -175,7 +175,7 @@ body {
         .search{
             z-index: 10;
             position: absolute;
-            bottom: 25%;
+            bottom: 15%;
             right: 25%;
         }
    }
@@ -186,7 +186,7 @@ body {
     }
 
     .nav {
-    right: 100px;
+    right: 60px;
     }
 
     .menu{
@@ -221,10 +221,6 @@ body {
         min-height: 110vh;
     }
 
-    .nav {
-    right: 100px;
-    }
-
     .menu{
         margin-right: 10px;
     }
@@ -233,7 +229,7 @@ body {
         width: 40vw;
         font-size: 0.65rem;
         margin-left: 145px;
-        margin-top: -30px;
+        margin-top: 70px;
         text-align: center;
     }
 
@@ -249,7 +245,26 @@ body {
         margin-top: 10px;
          z-index: 10;
         position: absolute;
-        bottom: 0%;
+        bottom: 20%;
         right: 25%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .About {
+        margin-top: 5px;
+    }
+    .search {
+        bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .About {
+        margin-top: -40px;
+    }
+    .search {
+        bottom: 10%;
+        right: 15%;
     }
 }
