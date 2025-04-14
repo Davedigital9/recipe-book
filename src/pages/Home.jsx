@@ -23,7 +23,7 @@ const Home = () => {
             <Link to="/" className='link-home'>Home</Link>
           </li>
           <li>
-            <Link to="/recipe-list" className='link-home'>Recipe List</Link>
+            <Link to="/recipe-list" className='link-list'>Recipe List</Link>
           </li>
         </ul>
 

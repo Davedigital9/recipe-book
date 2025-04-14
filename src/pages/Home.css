@@ -86,7 +86,8 @@ body {
     color: #712e25;
    }
 
-   .link-home{
+   .link-home,
+   .link-list{
     text-decoration: none;
     font-size: 1rem;
     color: #f7e9ce;
@@ -94,11 +95,43 @@ body {
     transition: color 0.3s ease;
   }
 
-@media screen and (max-width: 768px) {
+  .link-list{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f7e9ce;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-right: 80px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .About {
+        margin-top: 30px;
+        position: absolute;
+        width: 55vw;
+        z-index: -1;
+    }
+
+    .intro {
+        width: 90%;
+    }
+    
+  }
+   @media screen and (max-width: 768px) {
         body {
             background-size: cover;
             background-position: center;
-            height: 110vh;
+            min-height: 110vh;
         }
 
         .navbar {
@@ -121,8 +154,6 @@ body {
             opacity: 0;
         }
 
-        
-
         .nav.active {
             opacity: 1;
             transition: all 0.5s ease-in-out;
@@ -131,9 +162,6 @@ body {
         .menu {
             display: block;
         }
-
-
-
 
         .About {
             position: absolute;
@@ -148,84 +176,65 @@ body {
 
     @media screen and (max-width: 431px) {
     body {
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-    }
-
-    .About {
-        width: 65vw;
-        margin: 0 auto;
-    }
-
-    .intro {
-        max-width: 90%;
-    }
-}
-
-@media screen and (max-width: 431px) {
-    body {
-        min-height: 100vh; 
+        min-height: 110vh;
     }
 
     .nav {
+    right: 100px;
+    }
 
-    right: 60px;
+    .menu{
+        margin-right: 10px;
     }
 
     .About {
-        width: 45vw;
-        margin: 0 auto;
+        width: 40vw;
+        font-size: 0.8rem;
+        margin-left: 185px;
+        margin-top: -80px;
     }
 
     .intro {
-        max-width: 100%; 
+        width: 175%;
+    }
+
+    .search{
+        font-size: 1rem;
+        padding: 7px;
+        border-radius: 20px;
+        margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 391px) {
     body {
-        min-height: 100vh; 
-    }
-
-    .About {
-        width: 90%; 
-        margin: 0 auto;
-    }
-
-    .intro {
-        font-size: 0.9rem; 
-        max-width: 100%;
+        min-height: 110vh;
     }
 
     .nav {
-        right: 45px;
+    right: 100px;
     }
-}
 
-@media screen and (max-width: 360px) {
-    body {
-        min-height: 100vh;
+    .menu{
+        margin-right: 10px;
     }
 
     .About {
-        width: 90%;
-        margin: 0 auto;
+        width: 45vw;
+        font-size: 0.75rem;
+        margin-left: 135px;
+        margin-top: -80px;
+        text-align: center;
     }
 
     .intro {
-        font-size: 0.8rem; 
-        max-width: 100%;
-    }
-}
-
-@media screen and (orientation: landscape) {
-    body {
-        height: auto; 
+        width: 175%;
     }
 
-    .About {
-        width: 70%; 
-        margin: 0 auto;
+    .search{
+        font-size: 0.9rem;
+        padding: 7px;
+        border-radius: 20px;
+        margin-top: 10px;
     }
 }
