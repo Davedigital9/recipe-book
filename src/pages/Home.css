@@ -79,6 +79,9 @@ body {
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.3s ease;
+    position:absolute;
+    bottom: 12%;
+    right: 25%;
    }
 
    .search:hover {
@@ -151,6 +154,7 @@ body {
         .nav.active {
             opacity: 1;
             transition: all 0.5s ease-in-out;
+            align-content: center;
         }
 
         .menu {
@@ -160,10 +164,19 @@ body {
         .About {
             position: absolute;
             width: 65vw;
+            z-index: -1;
         }
 
         .intro {
             width: 90%;
+            z-index: -100;
+        }
+
+        .search{
+            z-index: 10;
+            position: absolute;
+            bottom: 25%;
+            right: 25%;
         }
    }
 
@@ -196,6 +209,10 @@ body {
         padding: 7px;
         border-radius: 20px;
         margin-top: 10px;
+         z-index: 10;
+        position: absolute;
+        bottom: 0%;
+        right: 25%;
     }
 }
 
@@ -214,20 +231,25 @@ body {
 
     .About {
         width: 40vw;
-        font-size: 0.75rem;
-        margin-left: 135px;
+        font-size: 0.65rem;
+        margin-left: 145px;
         margin-top: -30px;
         text-align: center;
     }
 
     .intro {
+        margin-top: -10px;
         width: 175%;
     }
 
     .search{
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 7px;
         border-radius: 20px;
         margin-top: 10px;
+         z-index: 10;
+        position: absolute;
+        bottom: 0%;
+        right: 25%;
     }
 }
