@@ -84,38 +84,77 @@ body {
     transition: color 0.3s ease;
   }
 
-   @media screen and (max-width: 768px) {
-        body {
-            background-size: cover;
-            background-position: center;
-            height: 110vh;
-        }
-
-        .About {
-            width: 65vw;
-        }
-
-        .intro {
-            width: 90%;
-        }   
-   }
-
-    @media screen and (max-width: 431px) {
+  @media screen and (max-width: 768px) {
     body {
-        height: 110vh;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+
+    .About {
+        width: 65vw;
+        margin: 0 auto;
+    }
+
+    .intro {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    body {
+        min-height: 100vh; 
     }
 
     .About {
         width: 45vw;
+        margin: 0 auto;
     }
 
     .intro {
-        width: 175%;
+        max-width: 100%; 
     }
 }
 
 @media screen and (max-width: 391px) {
     body {
-        height: 140vh;
+        min-height: 100vh; 
+    }
+
+    .About {
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    .intro {
+        font-size: 0.9rem; 
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        min-height: 100vh;
+    }
+
+    .About {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        font-size: 0.8rem; 
+        max-width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        height: auto; 
+    }
+
+    .About {
+        width: 70%; 
+        margin: 0 auto;
     }
 }
