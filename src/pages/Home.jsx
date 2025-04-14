@@ -1,25 +1,35 @@
 import React, { useState } from 'react';
 import Logo from '../assets/logo.png';
+import Hamburger from '../assets/icon-hamburger.svg'
 import './Home.css';
-import { Link, NavLink } from 'react-router-dom'; // Correct import
+import { Link } from 'react-router-dom'; // Correct import
 import SearchModal from '../components/SearchModal'; // Import the SearchModal component
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <div>
       <div className="navbar">
         <img className="logo" src={Logo} alt="Logo" />
 
-        <ul className="nav">
+        <ul className={isOpen ? "nav active" : "nav"}>
           <li>
             <Link to="/" className='link-home'>Home</Link>
           </li>
           <li>
-            <NavLink to="/recipe-list" className='link-home'>Recipe List</NavLink>
+            <Link to="/recipe-list" className='link-home'>Recipe List</Link>
           </li>
         </ul>
+
+        <div className='menu' onClick={toggleMenu}>
+          <img src={Hamburger} alt="Menu Bar" />
+        </div>
       </div>
 
       <div className="About">

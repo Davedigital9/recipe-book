@@ -1,12 +1,10 @@
-# React + Vite
+# 🧾 Recipe Book – A React Practice Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Overview
 
-Currently, two official plugins are available:
+**Recipe Book** is a web-based application that allows users to store, browse, and manage a collection of recipes. This project is designed to give students practical experience with React by building a functional frontend app that mimics a digital cookbook.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🎯 Purpose
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Enable users to save and view their favorite recipes in an organized way.
+- Provide hands-on practice with React, focusing on component design, form handling, and state management.
